@@ -1,0 +1,218 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:purple
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #333;
+}
+
+.diapo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    background-color: #1a3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block.active{
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.block .icon{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.block .description{
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.block .number {
+    background-color: white;
+    color: #1a3a5f;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.block.active .number {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+/* Effet hover */
+.block:hover{
+    transform: translateY(-10px); /*souleve le bloc de 10px*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Ajoute une ombre lors du survol*/
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: black;  /* Texte de la page active */
+    background-color: white; /* Couleur de fond de la page active */
+    border-radius: 5px;
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+.disposition {
+    display: flex;
+    align-items: center;
+}
+.container img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+.container p {
+    flex: 1;
+}
+.container{
+    width: 70%;
+    margin: 100px auto;
+    background-color: grey;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.paragraphe{
+    text-align: center;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .contain {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .description {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.additional-text {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0073b1; /* Change la couleur lors du survol (par exemple, bleu pour LinkedIn) */
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+

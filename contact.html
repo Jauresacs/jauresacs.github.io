@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv Jaures AZANDOSSESSI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="schoolcareer.html">School career</a></li>
+                <li><a href="professionalcareer.html">Professional Career</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="active" href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Contact me</h1>
+            <div class="text">
+                <p>Publie le sfbzgernhtrjf</p>
+                <p>Si vous avez des questions, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous :</p>
+            </div>
+        </header>
+        <div class="contain">
+            <form action="https://formspree.io/f/mnnaejbr" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name :</label>
+                </div>
+                <div class="=col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="=col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="=col-75">
+                    <input type="text" id="email" name="email" placeholder="Your mail..">
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="=col-75">
+                    <input type="text" id="phone" name="phone" pattern="\d{10}" title="required 10 number" placeholder="Your number..">
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div> 
+        </form>
+    </div>
+        <footer>
+        </footer>
+    </article>
+</body>
+</html>

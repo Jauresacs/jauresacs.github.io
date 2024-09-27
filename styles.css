@@ -110,12 +110,18 @@ li a:hover:not(.active){
 }
 .disposition {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .container img {
+    display: flex;
     max-width: 200px;
     margin-right: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .container p {
     flex: 1;
@@ -124,9 +130,10 @@ li a:hover:not(.active){
 .font{
     background-color: whitesmoke;
 }
+
 .container{
     width: 70%;
-    margin: 100px auto;
+    margin: 15px auto;
     background-color: white;
     padding: 40px;
     border-radius: 10px;

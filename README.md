@@ -25,7 +25,7 @@ Feel free to explore and reach out to me for any inquiries!
 ## Contact
 
 For any further questions or collaborations, you can contact me at:  
-📧 Email: [your-email@example.com]
+📧 Email: [jauresacs2004@gmail.com]
 
 ---
 

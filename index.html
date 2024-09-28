@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="home.css">
     </head>
     <body>
+        </script>
         <header>
-            <h1>My Professional Profile</h1>
+            <h1>My Circulum Professional</h1>
         </header>
         <nav>
             <ul>
@@ -23,7 +24,13 @@
         </nav>
         <div class="containers">
             <div class="=text-section">
-                <h1>Hello, welcome to my CV!</h1>
+                <h1 class="typing-container" id="typing">Hello, welcome to my CV!</h1>
+                <script>
+                    // Faire disparaître le curseur une fois l'animation terminée
+                    setTimeout(function() {
+                        document.getElementById('typing').classList.add('finished');
+                    }, 4000); // 4000ms correspond à la durée de l'animation typing (4s)
+                </script>
                 <p>I'd like to introduce you to who I am, what I’ve accomplished, and my journey so far</p>
             </div>
             <div class="image-section">

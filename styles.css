@@ -11,6 +11,32 @@ h1{
     color:#333333
 }
 
+.typing-container {
+    /* font-family: 'Courier New', monospace; */
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid; /* Curseur clignotant */
+    width: 0; /* Cache le texte initialement */
+    animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end 4s;
+}
+
+/* Animation de la frappe */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+/* Faire disparaître le curseur après l'écriture */
+.typing-container.finished {
+    border-right: none; /* Retire le curseur */
+}
+
 ul{
     list-style-type: none;
     margin: 0;

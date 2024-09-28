@@ -1,0 +1,94 @@
+ 
+  .containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: whitesmoke;
+    flex-wrap: wrap; /* Permet à l'image et au texte de se réorganiser en colonne sur petits écrans */
+  }
+  
+  .text-section {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-section h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .text-section p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .text-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 70px;
+  }
+  
+  /* Media Queries pour rendre le design responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Les éléments passent en colonne */
+      padding: 20px;
+    }
+  
+    .text-section {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .text-section h1 {
+      font-size: 28px;
+    }
+  
+    .text-section p {
+      font-size: 16px;
+    }
+  
+    .image-section {
+      margin-top: 20px;
+    }
+  
+    .image-section img {
+      max-width: 80%; /* Réduction de l'image sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-section h1 {
+      font-size: 24px;
+    }
+  
+    .text-section p {
+      font-size: 14px;
+    }
+  
+    .text-section button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .image-section img {
+      max-width: 100%; /* L'image prend la pleine largeur de l'écran */
+    }
+  }
+  

@@ -1,10 +1,15 @@
- 
+body{
+  background-color: whitesmoke;
+ }
+  
+  
+  
   .containers {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     flex-wrap: wrap; /* Permet à l'image et au texte de se réorganiser en colonne sur petits écrans */
   }
   
